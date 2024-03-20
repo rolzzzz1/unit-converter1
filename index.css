@@ -1,0 +1,93 @@
+@font-face {
+  src: url("Inter-ExtraBold.ttf");
+  font-family: Inter-ExtraBold;
+}
+
+@font-face {
+  src: url("Inter-Medium.ttf");
+  font-family: Inter-Medium;
+}
+
+@font-face {
+  src: url("Inter-SemiBold.ttf");
+  font-family: Inter-SemiBold;
+}
+
+@font-face {
+  src: url("Inter-Regular.ttf");
+  font-family: Inter-Regular;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.inter_extrabold {
+  font-family: Inter-ExtraBold;
+}
+
+#head_div {
+  background-color: #6943ff;
+  margin: 0;
+  padding: 20px 10px 20px 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #f3f5f3;
+  height: 40%;
+}
+
+#input_num {
+  background-color: none;
+  height: 85px;
+  width: 120px;
+  border: 2px solid #f3f5f3;
+  background-color: #6943ff;
+  border-radius: 5px;
+  font-size: 38px;
+  text-align: center;
+  color: #f3f5f3;
+}
+
+#convert_btn {
+  padding: 10px 20px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  background-color: #f3f5f3;
+  border: none;
+  border-radius: 5px;
+  font-family: Inter-Medium;
+}
+
+#body_div_main {
+  background-color: #f3f5f3;
+  padding: 20px 20px;
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#body_div_main h3 {
+  color: #5a537b;
+  font-family: Inter-SemiBold;
+  margin-bottom: 8px;
+}
+
+#body_div_main p {
+  color: #353535;
+  padding-top: 0;
+  margin-top: 0;
+  font-family: Inter-Regular;
+}
+
+.body_divs {
+  width: 100%;
+  background-color: #ffffff;
+  padding-top: 10px;
+  margin-top: 10px;
+}
