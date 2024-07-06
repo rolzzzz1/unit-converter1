@@ -14,15 +14,15 @@ convertBtn.addEventListener("click", function () {
   const input = inputNum.value;
 
   meterP.textContent = `
-    ${input} meters = ${(input * 3.281).toFixed(3)} feet | 
+    ${input} meters = ${(input * 3.28084).toFixed(3)} feet | 
     ${input} feet = ${(input * 0.3048).toFixed(3)} meters
   `;
   literP.textContent = `
-    ${input} liters = ${(input * 0.264).toFixed(3)} gallons | 
-    ${input} gallons = ${(input * 3.785412).toFixed(3)} liters
+    ${input} liters = ${(input * 0.264172).toFixed(3)} gallons | 
+    ${input} gallons = ${(input * 3.78541).toFixed(3)} liters
   `;
   kilogramsP.textContent = `
-    ${input} kilograms = ${(input * 2.204).toFixed(3)} pounds | 
-    ${input} pounds = ${(input * 0.454).toFixed(3)} kilograms
+    ${input} kilograms = ${(input * 2.20462).toFixed(3)} pounds | 
+    ${input} pounds = ${(input * 0.453592).toFixed(3)} kilograms
   `;
 });
