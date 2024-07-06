@@ -28,7 +28,7 @@ body {
   font-family: Inter-ExtraBold;
 }
 
-#head_div {
+.head_div {
   background-color: #6943ff;
   margin: 0;
   padding: 20px 10px 20px 10px;
@@ -40,7 +40,7 @@ body {
   height: 40%;
 }
 
-#input_num {
+.input_num {
   background-color: none;
   height: 85px;
   width: 120px;
@@ -52,7 +52,7 @@ body {
   color: #f3f5f3;
 }
 
-#convert_btn {
+.convert_btn {
   padding: 10px 20px;
   margin-top: 30px;
   margin-bottom: 30px;
@@ -62,7 +62,7 @@ body {
   font-family: Inter-Medium;
 }
 
-#body_div_main {
+.body_div_main {
   background-color: #f3f5f3;
   padding: 20px 20px;
   height: 50%;
@@ -72,13 +72,13 @@ body {
   align-items: center;
 }
 
-#body_div_main h3 {
+.body_div_main h3 {
   color: #5a537b;
   font-family: Inter-SemiBold;
   margin-bottom: 8px;
 }
 
-#body_div_main p {
+.body_div_main p {
   color: #353535;
   padding-top: 0;
   margin-top: 0;
