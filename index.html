@@ -9,20 +9,27 @@
   <body>
     <div class="head_div">
       <h1 class="inter_extrabold">Metric/Imperial Unit Conversion</h1>
-      <input id="input_num" class="input_num inter_extrabold "/>
+      <input
+        id="input_num"
+        class="input_num inter_extrabold"
+        type="number"
+        min="1"
+        oninput="validity.valid||(value='');"
+      />
+      <p class="msgP hiddenMsg" id="msg">Hello</p>
       <button id="convert_btn" class="convert_btn">Convert</button>
     </div>
     <div class="body_div_main">
       <div class="body_divs">
-        <h3>Length (Meter/Feet)</h2>
+        <h3>Length (Meter/Feet)</h3>
         <p id="meter_feet_p">1 meter = 3.281 feet</p>
       </div>
       <div class="body_divs">
-        <h3>Volume (Liters/Gallons)</h2>
+        <h3>Volume (Liters/Gallons)</h3>
         <p id="liter_gallon_p">1 liter = 0.264 gallon</p>
       </div>
       <div class="body_divs">
-        <h3>Mass (Kilograms/Pounds)</h2>
+        <h3>Mass (Kilograms/Pounds)</h3>
         <p id="kilograms_pounds_p">1 kilogram = 2.204 pound</p>
       </div>
     </div>

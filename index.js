@@ -5,6 +5,7 @@
 */
 
 const inputNum = document.getElementById("input_num");
+const msg = document.getElementById("msg");
 const convertBtn = document.getElementById("convert_btn");
 const meterP = document.getElementById("meter_feet_p");
 const literP = document.getElementById("liter_gallon_p");
@@ -12,6 +13,8 @@ const kilogramsP = document.getElementById("kilograms_pounds_p");
 
 convertBtn.addEventListener("click", function () {
   const input = inputNum.value;
+
+  checkInput(input);
 
   meterP.textContent = `
     ${input} meters = ${(input * 3.28084).toFixed(3)} feet | 
@@ -25,4 +28,22 @@ convertBtn.addEventListener("click", function () {
     ${input} kilograms = ${(input * 2.20462).toFixed(3)} pounds | 
     ${input} pounds = ${(input * 0.453592).toFixed(3)} kilograms
   `;
+
+  inputNum.value = "";
 });
+
+function checkInput(input) {
+  if (input === "") {
+    if (msg.classList.contains("hiddenMsg")) {
+      msg.classList.remove("hiddenMsg");
+    }
+
+    msg.textContent = "Please enter a value";
+  } else {
+    msg.textContent = "";
+
+    if (!msg.classList.contains("hiddenMsg")) {
+      msg.classList.add("hiddenMsg");
+    }
+  }
+}
