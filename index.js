@@ -14,22 +14,24 @@ const kilogramsP = document.getElementById("kilograms_pounds_p");
 convertBtn.addEventListener("click", function () {
   const input = inputNum.value;
 
-  checkInput(input);
+  const response = checkInput(input);
 
-  meterP.textContent = `
-    ${input} meters = ${(input * 3.28084).toFixed(3)} feet | 
-    ${input} feet = ${(input * 0.3048).toFixed(3)} meters
-  `;
-  literP.textContent = `
-    ${input} liters = ${(input * 0.264172).toFixed(3)} gallons | 
-    ${input} gallons = ${(input * 3.78541).toFixed(3)} liters
-  `;
-  kilogramsP.textContent = `
-    ${input} kilograms = ${(input * 2.20462).toFixed(3)} pounds | 
-    ${input} pounds = ${(input * 0.453592).toFixed(3)} kilograms
-  `;
+  if (response) {
+    meterP.textContent = `
+      ${input} meters = ${(input * 3.28084).toFixed(3)} feet | 
+      ${input} feet = ${(input * 0.3048).toFixed(3)} meters
+    `;
+    literP.textContent = `
+      ${input} liters = ${(input * 0.264172).toFixed(3)} gallons | 
+      ${input} gallons = ${(input * 3.78541).toFixed(3)} liters
+    `;
+    kilogramsP.textContent = `
+      ${input} kilograms = ${(input * 2.20462).toFixed(3)} pounds | 
+      ${input} pounds = ${(input * 0.453592).toFixed(3)} kilograms
+    `;
 
-  inputNum.value = "";
+    inputNum.value = "";
+  }
 });
 
 function checkInput(input) {
@@ -39,11 +41,14 @@ function checkInput(input) {
     }
 
     msg.textContent = "Please enter a value";
+    return false;
   } else {
     msg.textContent = "";
 
     if (!msg.classList.contains("hiddenMsg")) {
       msg.classList.add("hiddenMsg");
     }
+
+    return true;
   }
 }
