@@ -108,6 +108,7 @@ input[type="number"] {
   margin: 5px 0 0 0;
   padding: 0;
   min-height: 20px;
+  font-family: Inter-Regular;
 }
 
 .hiddenMsg {
